@@ -19,13 +19,13 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if (userNameTF.text != "User"
-            && userNameTF.text != "Max")
+        if (userNameTF.text != "user" && userNameTF.text != "Max")
             || passwordTF.text != "123" {
                 showAlert(
                     withTitle: "Invalid login or password",
                     andMessage: "Please, enter correct login and password"
                 )
+                userNameTF.text = ""
                 passwordTF.text = ""
         }
         
@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
     @IBAction func forgotUserNameDidTapped() {
         showAlert(
             withTitle: "Oops!",
-            andMessage: "Your login is User or Max"
+            andMessage: "Your login is user or Max"
         )
         userNameTF.text = ""
         passwordTF.text = ""
