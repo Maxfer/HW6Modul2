@@ -27,11 +27,10 @@ class LoginViewController: UIViewController {
                 )
                 userNameTF.text = ""
                 passwordTF.text = ""
+        } else {
+            guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+            welcomeVC.userName = userNameTF.text
         }
-        
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userNameTF.text
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
