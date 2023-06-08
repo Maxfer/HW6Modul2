@@ -12,11 +12,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (userNameTF.text != "user" && userNameTF.text != "Max")
@@ -25,7 +20,6 @@ class LoginViewController: UIViewController {
                     withTitle: "Invalid login or password",
                     andMessage: "Please, enter correct login and password"
                 )
-                userNameTF.text = ""
                 passwordTF.text = ""
         } else {
             guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
@@ -45,7 +39,6 @@ class LoginViewController: UIViewController {
             withTitle: "Oops!",
             andMessage: "Your login is user or Max"
         )
-        userNameTF.text = ""
         passwordTF.text = ""
     }
     
@@ -58,8 +51,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        
-//        guard let welcomeVC = unwindSegue.source as? WelcomeViewController else { return }
         userNameTF.text = ""
         passwordTF.text = ""
     }
@@ -71,9 +62,8 @@ extension LoginViewController {
     
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) //{ _ in
-//            self.passwordTF.text = ""
-//        }
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
         alert.addAction(okAction)
         present(alert, animated: true)
     }
