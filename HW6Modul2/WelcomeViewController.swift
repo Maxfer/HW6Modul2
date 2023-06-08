@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
 
     @IBOutlet var welcomelabel: UILabel!
     @IBOutlet var logOutButton: UIButton!
@@ -31,8 +31,7 @@ class WelcomeViewController: UIViewController {
         alpha: 1.0
     )
     
-    
-    var userName: String!
+    var userName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +42,7 @@ class WelcomeViewController: UIViewController {
             bottomColor: bottomColor
         )
         logOutButton.layer.cornerRadius = 20
-        welcomelabel.text = "Welcome, \(userName ?? "")!"
+        welcomelabel.text = "Welcome, \(userName)!"
     }
 }
 
