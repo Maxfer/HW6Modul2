@@ -34,8 +34,8 @@ final class LoginViewController: UIViewController {
             performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         } else {
                 showAlert(
-                    withTitle: "Invalid login or password",
-                    andMessage: "Please, enter correct login and password",
+                    Title: "Invalid login or password",
+                    Message: "Please, enter correct login and password",
                     handler: { _ in self.passwordTF.text = "" }
                 )
         }
@@ -43,8 +43,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotLoginPasswordDidTapped(_ sender: UIButton) {
         sender.tag == 1
-        ? showAlert(withTitle: "Oops!", andMessage: "Your login is \(userName)")
-        : showAlert(withTitle: "Oops!", andMessage: "Your password is \(userPassword)")
+        ? showAlert(Title: "Oops!", Message: "Your login is \(userName)")
+        : showAlert(Title: "Oops!", Message: "Your password is \(userPassword)")
     }
     
     
@@ -57,8 +57,8 @@ final class LoginViewController: UIViewController {
 
 extension LoginViewController {
     
-    private func showAlert(withTitle title: String,
-                           andMessage message: String,
+    private func showAlert(Title title: String,
+                           Message message: String,
                            handler: ((UIAlertAction) -> Void)? = nil) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
