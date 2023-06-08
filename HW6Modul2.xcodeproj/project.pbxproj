@@ -58,16 +58,40 @@
 		3EF88B072A309E400028B828 /* HW6Modul2 */ = {
 			isa = PBXGroup;
 			children = (
-				3EF88B082A309E400028B828 /* AppDelegate.swift */,
-				3EF88B0A2A309E400028B828 /* SceneDelegate.swift */,
-				3EF88B0C2A309E400028B828 /* LoginViewController.swift */,
-				3EF88B0E2A309E400028B828 /* Main.storyboard */,
-				3EF88B1C2A30A62A0028B828 /* WelcomeViewController.swift */,
+				3EF88B3F2A3239B00028B828 /* ViewControllers */,
+				3EF88B402A3239D30028B828 /* Storyboards */,
 				3EF88B112A309E410028B828 /* Assets.xcassets */,
-				3EF88B132A309E410028B828 /* LaunchScreen.storyboard */,
-				3EF88B162A309E410028B828 /* Info.plist */,
+				3EF88B3E2A3239A20028B828 /* App */,
 			);
 			path = HW6Modul2;
+			sourceTree = "<group>";
+		};
+		3EF88B3E2A3239A20028B828 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3EF88B082A309E400028B828 /* AppDelegate.swift */,
+				3EF88B0A2A309E400028B828 /* SceneDelegate.swift */,
+				3EF88B162A309E410028B828 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EF88B3F2A3239B00028B828 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EF88B0C2A309E400028B828 /* LoginViewController.swift */,
+				3EF88B1C2A30A62A0028B828 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3EF88B402A3239D30028B828 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3EF88B0E2A309E400028B828 /* Main.storyboard */,
+				3EF88B132A309E410028B828 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LGA5WCCP3T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW6Modul2/Info.plist;
+				INFOPLIST_FILE = HW6Modul2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LGA5WCCP3T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW6Modul2/Info.plist;
+				INFOPLIST_FILE = HW6Modul2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
