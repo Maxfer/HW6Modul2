@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="caT-zz-4c2">
-                                <rect key="frame" x="20" y="178" width="280" height="212.5"/>
+                                <rect key="frame" x="20" y="149" width="280" height="210.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="h5p-pI-pi2">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="90"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h5p-pI-pi2">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="88"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oac-wQ-TNv">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
@@ -29,41 +29,41 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asD-Iw-p1S">
-                                                <rect key="frame" x="0.0" y="56" width="280" height="34"/>
+                                                <rect key="frame" x="0.0" y="54" width="280" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" smartInsertDeleteType="no"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWc-sh-SKV">
-                                        <rect key="frame" x="0.0" y="110" width="280" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="108" width="280" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="9li-KZ-zCZ" kind="presentation" modalPresentationStyle="fullScreen" id="Rsx-rh-gZh"/>
+                                            <action selector="logInDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="loc-K8-gdE"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jfF-id-UdF">
-                                        <rect key="frame" x="0.0" y="164.5" width="280" height="48"/>
+                                        <rect key="frame" x="0.0" y="162.5" width="280" height="48"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nER-yf-yTH">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nER-yf-yTH">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="48"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotUserNameDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="EC6-j7-GaU"/>
+                                                    <action selector="forgotLoginPasswordDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5Q-0p-eGj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-DL-eos">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-DL-eos">
                                                 <rect key="frame" x="150" y="0.0" width="130" height="48"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZ0-aI-W84"/>
+                                                    <action selector="forgotLoginPasswordDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wN1-nT-bfe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -75,13 +75,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="caT-zz-4c2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6e7-QV-Lua"/>
-                            <constraint firstItem="caT-zz-4c2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DyF-EF-qbQ"/>
+                            <constraint firstItem="caT-zz-4c2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="L3V-kV-pCN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="caT-zz-4c2" secondAttribute="trailing" constant="20" id="Qqr-KB-SXP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordTF" destination="asD-Iw-p1S" id="4jQ-W1-0x4"/>
                         <outlet property="userNameTF" destination="Oac-wQ-TNv" id="faq-Qq-IS0"/>
+                        <segue destination="9li-KZ-zCZ" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="8IN-Xa-2ov"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
