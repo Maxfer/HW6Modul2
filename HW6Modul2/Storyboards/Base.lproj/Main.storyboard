@@ -175,7 +175,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwn-aM-ZDz">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="U5m-Cy-1Vl"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="U5m-Cy-1Vl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -183,6 +183,9 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7r-ws-K2o">
                                                 <rect key="frame" x="130" y="0.0" width="158" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="BDi-Uu-Wwe"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <color key="highlightedColor" systemColor="systemIndigoColor"/>
@@ -195,7 +198,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-k5-Uqu">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="XSb-51-NUc"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="XSb-51-NUc"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -203,6 +206,9 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ti2-8E-ysg">
                                                 <rect key="frame" x="130" y="0.0" width="158" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="hlI-dV-jWg"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -215,7 +221,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пол:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnQ-YC-TW2">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="Nei-cP-vct"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Nei-cP-vct"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -223,6 +229,9 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-0U-AcC">
                                                 <rect key="frame" x="130" y="0.0" width="158" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="xEi-x8-9Mu"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -235,7 +244,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возвраст:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-Ts-NHv">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="HXz-Y1-Gag"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="HXz-Y1-Gag"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -243,6 +252,9 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3s-L3-Hoy">
                                                 <rect key="frame" x="130" y="0.0" width="158" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="1wg-Gt-tR7"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
