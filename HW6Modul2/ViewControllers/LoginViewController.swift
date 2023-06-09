@@ -14,19 +14,36 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let userName = "user"
-    private let userPassword = "123"
+    private let userMaxim = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameTF.text = userName
-        passwordTF.text = userPassword
+        
+        userNameTF.text = userMaxim.login
+        passwordTF.text = userMaxim.password
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userNameTF.text ?? ""
-    }
+        //guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = userNameTF.text ?? ""
+            } else if let personVC = viewController as? PersonViewController {
+                personVC.titleL = userMaxim.person.surname + " " + userMaxim.person.name
+                personVC.name = userMaxim.person.name
+                personVC.surname = userMaxim.person.surname
+                personVC.gender = userMaxim.person.gender.rawValue
+                personVC.age = String(userMaxim.person.age)
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let workOneVC = navigationVC.topViewController as? WorkOneViewController else { return }
+                workOneVC.personValue = userMaxim.person
+                }
+            }
+        }
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -36,7 +53,7 @@ final class LoginViewController: UIViewController {
     // MARK: — IBAction
     
     @IBAction func logInDidTapped() {
-        if userNameTF.text == userName , passwordTF.text == userPassword {
+        if userNameTF.text == userMaxim.login , passwordTF.text == userMaxim.password {
             performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         } else {
                 showAlert(
@@ -49,8 +66,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotLoginPasswordDidTapped(_ sender: UIButton) {
         sender.tag == 1
-        ? showAlert(Title: "Oops!", Message: "Your login is \(userName)")
-        : showAlert(Title: "Oops!", Message: "Your password is \(userPassword)")
+        ? showAlert(Title: "Oops!", Message: "Your login is \(userMaxim.login)")
+        : showAlert(Title: "Oops!", Message: "Your password is \(userMaxim.password)")
     }
     
     

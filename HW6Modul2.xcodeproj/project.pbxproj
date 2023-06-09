@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E64DAED2A32FE0D00734746 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DAEC2A32FE0D00734746 /* Person.swift */; };
+		3E64DAF52A33288F00734746 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DAF42A33288F00734746 /* TabBarViewController.swift */; };
+		3E64DAF72A333CE400734746 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DAF62A333CE400734746 /* PersonViewController.swift */; };
+		3E64DAFD2A339A2F00734746 /* WorkOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DAFC2A339A2F00734746 /* WorkOneViewController.swift */; };
+		3E64DB012A339E0600734746 /* WorkTwoViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DB002A339E0600734746 /* WorkTwoViewController copy.swift */; };
+		3E64DB032A33AE5500734746 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64DB022A33AE5500734746 /* EducationViewController.swift */; };
 		3EF88B092A309E400028B828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF88B082A309E400028B828 /* AppDelegate.swift */; };
 		3EF88B0B2A309E400028B828 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF88B0A2A309E400028B828 /* SceneDelegate.swift */; };
 		3EF88B0D2A309E400028B828 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF88B0C2A309E400028B828 /* LoginViewController.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E64DAEC2A32FE0D00734746 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3E64DAF42A33288F00734746 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3E64DAF62A333CE400734746 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		3E64DAFC2A339A2F00734746 /* WorkOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOneViewController.swift; sourceTree = "<group>"; };
+		3E64DB002A339E0600734746 /* WorkTwoViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkTwoViewController copy.swift"; sourceTree = "<group>"; };
+		3E64DB022A33AE5500734746 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		3EF88B052A309E400028B828 /* HW6Modul2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW6Modul2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF88B082A309E400028B828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF88B0A2A309E400028B828 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E64DAEB2A32FDCD00734746 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E64DAEC2A32FE0D00734746 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3EF88AFC2A309E400028B828 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +78,10 @@
 		3EF88B072A309E400028B828 /* HW6Modul2 */ = {
 			isa = PBXGroup;
 			children = (
-				3EF88B3F2A3239B00028B828 /* ViewControllers */,
-				3EF88B402A3239D30028B828 /* Storyboards */,
 				3EF88B112A309E410028B828 /* Assets.xcassets */,
+				3E64DAEB2A32FDCD00734746 /* Models */,
+				3EF88B402A3239D30028B828 /* Storyboards */,
+				3EF88B3F2A3239B00028B828 /* ViewControllers */,
 				3EF88B3E2A3239A20028B828 /* App */,
 			);
 			path = HW6Modul2;
@@ -81,6 +102,11 @@
 			children = (
 				3EF88B0C2A309E400028B828 /* LoginViewController.swift */,
 				3EF88B1C2A30A62A0028B828 /* WelcomeViewController.swift */,
+				3E64DAF42A33288F00734746 /* TabBarViewController.swift */,
+				3E64DAF62A333CE400734746 /* PersonViewController.swift */,
+				3E64DAFC2A339A2F00734746 /* WorkOneViewController.swift */,
+				3E64DB002A339E0600734746 /* WorkTwoViewController copy.swift */,
+				3E64DB022A33AE5500734746 /* EducationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -168,7 +194,13 @@
 				3EF88B0D2A309E400028B828 /* LoginViewController.swift in Sources */,
 				3EF88B1D2A30A62A0028B828 /* WelcomeViewController.swift in Sources */,
 				3EF88B092A309E400028B828 /* AppDelegate.swift in Sources */,
+				3E64DB032A33AE5500734746 /* EducationViewController.swift in Sources */,
+				3E64DB012A339E0600734746 /* WorkTwoViewController copy.swift in Sources */,
+				3E64DAED2A32FE0D00734746 /* Person.swift in Sources */,
+				3E64DAF52A33288F00734746 /* TabBarViewController.swift in Sources */,
+				3E64DAFD2A339A2F00734746 /* WorkOneViewController.swift in Sources */,
 				3EF88B0B2A309E400028B828 /* SceneDelegate.swift in Sources */,
+				3E64DAF72A333CE400734746 /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

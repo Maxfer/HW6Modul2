@@ -36,6 +36,7 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //= UIImageView(frame: CGRectMake(0, 0, 100, 100))
         view.addVerticalGradientLayer(
             topColor: topColor,
             centerColor: centerColor,
